@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Basic Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="white_sub">#EFEFEF</color>
+    <color name="white_main">#F6F6F6</color>
+
+    <!-- Red Tones -->
+    <color name="red">#FF0000</color>
+    <color name="darkRed">#B71C1C</color>
+    <color name="lightRed">#FFCDD2</color>
+
+    <!-- Green Tones -->
+    <color name="green">#00FF00</color>
+    <color name="darkGreen">#004D40</color>
+    <color name="lightGreen">#C8E6C9</color>
+
+    <!-- Blue Tones -->
+    <color name="blue">#0000FF</color>
+    <color name="darkBlue">#303F9F</color>
+    <color name="lightBlue">#BBDEFB</color>
+
+    <!-- Yellow Tones -->
+    <color name="yellow">#FFFF00</color>
+    <color name="darkYellow">#FFD600</color>
+    <color name="lightYellow">#FFF9C4</color>
+
+    <!-- Purple Tones -->
+    <color name="purple">#9C27B0</color>
+    <color name="darkPurple">#673AB7</color>
+    <color name="lightPurple">#E1BEE7</color>
+
+    <!-- Orange Tones -->
+    <color name="orange">#FF9800</color>
+    <color name="darkOrange">#EF6C00</color>
+    <color name="lightOrange">#FFE0B2</color>
+
+    <!-- Brown Tones -->
+    <color name="brown">#795548</color>
+    <color name="darkBrown">#5D4037</color>
+    <color name="lightBrown">#D7CCC8</color>
+
+    <!-- Pink Tones -->
+    <color name="pink">#E91E63</color>
+    <color name="darkPink">#C2185B</color>
+    <color name="lightPink">#F8BBD0</color>
+</resources>

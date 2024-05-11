@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="top|bottom|center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="10dp"
+                android:background="#F6F6F6" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="285dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text=" "
+                android:textSize="40sp" />
+
+            <android.widget.Button
+                android:id="@+id/Button1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/connection" />
+
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="20dp"
+                android:background="#F6F6F6" />
+
+            <android.widget.Button
+                android:id="@+id/Button2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/more" />
+
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="20dp"
+                android:background="#F6F6F6" />
+
+            <android.widget.Button
+                android:id="@+id/Button3"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/menubar" />
+
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="15dp"
+                android:background="#F6F6F6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mid_lay"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:orientation="horizontal" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:civ_border_overlay="true"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="89dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="4dp"
+                    android:text="nic"
+                    android:textAlignment="viewStart"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+                <TextView
+                    android:id="@+id/my_post"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="게시물"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/follower"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.494" />
+
+                <TextView
+                    android:id="@+id/follower"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="팔로워"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/following"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.494" />
+
+                <TextView
+                    android:id="@+id/following"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="28dp"
+                    android:text="팔로잉"
+                    android:textAlignment="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.494" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/profile_edit"
+                android:layout_width="151dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/white_btn"
+                android:scaleType="centerInside"
+                android:text="프로필 편집"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <android.widget.Button
+                android:id="@+id/profile_share"
+                android:layout_width="149dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.4"
+                android:background="@drawable/white_btn"
+                android:text="프로필 공유"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+            <android.widget.Button
+                android:id="@+id/add_user"
+                android:layout_width="36dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/white_btn"
+                android:text="+"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteX="-3dp"
+            tools:layout_editor_absoluteY="204dp"
+            android:numColumns="3"/>
+
+
+    </LinearLayout>
+
+    <android.widget.Button
+        android:id="@+id/account_loadMoreButton"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/white_btn"
+        android:text="더 보기"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
